@@ -6,6 +6,7 @@ import HomePage from "./pages/HomePage";
 import Pagenotfound from "./pages/Pagenotfound";
 import Catalogue from "./pages/Catalogue";
 import Register from "./pages/Auth/Register";
+import Login from "./pages/Auth/Login";
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
+
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/catalogue" element={<Catalogue />} />

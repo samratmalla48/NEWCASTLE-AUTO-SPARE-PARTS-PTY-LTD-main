@@ -59,7 +59,9 @@ export const registerController = async (req, res) => {
 };
 // POST LOGIN
 export const loginController = async (req, res) => {
+  
   try {
+    console.log("login controller inside");
     const { email, password } = req.body;
     //validation
     if (!email || !password) {
