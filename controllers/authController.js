@@ -90,7 +90,7 @@ export const loginController = async (req, res) => {
       expiresIn: "7d",
     });
     // Format for JWT.sign(payload, secretOrPrivateKey, [options])
-    console.log(token, "token");
+    console.log("token",token );
     res.status(200).send({
       success: true,
       message: "login successfully",
